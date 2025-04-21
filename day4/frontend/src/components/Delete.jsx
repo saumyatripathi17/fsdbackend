@@ -7,7 +7,7 @@ const Delete = () => {
     const id = e.target.id.value;
     
     try {
-      await axios.delete(`http://localhost:9000/users/${id}`);
+      await axios.delete(`https://fsdbackend-fwxi.onrender.com/users/${id}`);
       alert('User deleted successfully');
     } catch (error) {
       console.error("Error deleting user:", error);
